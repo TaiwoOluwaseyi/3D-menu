@@ -21,7 +21,8 @@
     width: 100%;
     padding: 0 25rem;
     display: flex;
-    gap: 20px;
+    row-gap: 10px;
+    column-gap: 20px;
     justify-content: space-evenly;
     transform-style: preserve-3d;
   }
@@ -92,4 +93,28 @@
   .menu-item:hover i {
     color: #6464ff;
   }
+
+
+  @media screen and (max-width:800px){
+.menu {
+  flex-direction: column;
+  padding: 0 1rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  width: 10rem;
+  height: 10rem;
+}
+
+.menu-item i {
+  font-size: 4rem;
+}
+
+
+  }
+    
+  
   
